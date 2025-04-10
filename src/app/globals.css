@@ -1,5 +1,54 @@
 @import "tailwindcss";
+/*@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));*/
+@custom-variant dark (&:where(.dark, .dark *));
 
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+@theme {
+    --shadow-box-shadow-first: 0px 1px 0px var(--shadow-color);
+    --color-button-border-color: var(--border-color);
+    --color-hover-background: var(--hover-background);
+    --color-active-background: var(--active-background);
+}
+
+@layer base {
+    :root {
+        --shadow-color: rgba(55, 53, 47, 0.09);
+        --border-color: rgba(55, 53, 47, 0.09);
+        --hover-background: rgba(55, 53, 47, 0.06);
+        --active-background: rgba(55, 53, 47, 0.16);
+    }
+    .dark {
+        --shadow-color: rgba(255, 255, 255, 0.094);
+        --border-color: rgba(255, 255, 255, 0.094);
+        --hover-background: rgba(255, 255, 255, 0.055);
+        --active-background: rgba(255, 255, 255, 0.03);
+    }
+}
+
+@utility container {
+    margin: 2rem auto ;
+    padding-inline: 2rem;
+}
+
+.my-transition{
+    transition: all ease-in .4s;
+}
+
+
+
+
+/*.btn{
+    @apply
+}*/
 /*:root {*/
 /*  --background: #ffffff;*/
 /*  --foreground: #171717;*/
