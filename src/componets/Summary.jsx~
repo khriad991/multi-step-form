@@ -1,0 +1,54 @@
+'use client'
+import React from 'react';
+
+export default function Summary({formData, onSubmit, onEdit}) {
+    // Destructure the form data for easy access
+    const { fullName, email, phone, streetAddress, city, zipCode, userName } = formData;
+
+    return (
+        <div className="flex flex-col gap-4">
+            <h1 className="text-lg font-medium capitalize">Summary</h1>
+
+            <div className="space-y-4">
+                {/* Personal Information */}
+                <div>
+                    <h2 className="text-md font-semibold">Personal Information</h2>
+                    <p><strong>Full Name:</strong> {fullName}</p>
+                    <p><strong>Email:</strong> {email}</p>
+                    <p><strong>Phone:</strong> {phone}</p>
+                </div>
+
+                {/* Address Details */}
+                <div>
+                    <h2 className="text-md font-semibold">Address Details</h2>
+                    <p><strong>Street Address:</strong> {streetAddress}</p>
+                    <p><strong>City:</strong> {city}</p>
+                    <p><strong>Zip Code:</strong> {zipCode}</p>
+                </div>
+
+                {/* Account Setup */}
+                <div>
+                    <h2 className="text-md font-semibold">Account Setup</h2>
+                    <p><strong>Username:</strong> {userName}</p>
+                </div>
+            </div>
+
+            {/* Buttons */}
+            <div className="flex justify-between items-center mt-4">
+                <button
+                    className="bg-blue-600 text-white px-4 py-2 rounded"
+                    onClick={onEdit}
+                >
+                    Edit
+                </button>
+
+                <button
+                    className="bg-green-600 text-white px-4 py-2 rounded"
+                    onClick={() => onSubmit(formData)}  // Submit the final data
+                >
+                    Submit
+                </button>
+            </div>
+        </div>
+    );
+}
