@@ -29,7 +29,6 @@ const Schema = z.object({
 
      const onSubmit = (data)=> {
         onNext(data);
-         console.log({...data})
      };
     return (
         <MainLayout title={"Address Details"}>
@@ -41,11 +40,12 @@ const Schema = z.object({
                           error={errors.zipCode}/>
                 <div className="flex md:justify-between flex-col md:flex-row gap-y-6 gap-x-4  ">
                     <button type="submit"
-                            className="w-fit my-transition px-8 py-2 text-black rounded-lg font-bold capitalize  bg-blue-700 text-white hover:bg-white hover:text-blue-700 border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200">
-                         Next
+                            className="w-fit my-transition px-8 py-2 text-black rounded-lg font-bold capitalize  bg-black text-white hover:bg-white hover:text-blue-700 border hover:border-black  dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200"
+                    >Next
                     </button>
                     <button type="submit"
-                             className="w-fit my-transition px-8 py-2 text-black rounded-lg font-bold capitalize  bg-blue-700 text-white hover:bg-white hover:text-blue-700 border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200"
+                            className="w-fit my-transition px-8 py-2 text-black rounded-lg font-bold capitalize  bg-black text-white hover:bg-white hover:text-blue-700 border hover:border-black  dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200"
+
                             onClick={onPrev}>Previous
                     </button>
                 </div>

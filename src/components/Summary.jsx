@@ -57,7 +57,7 @@ export default function Summary({ data, goToStep, resetFormData }) {
                     </div>
                     <button
                         onClick={() => goToStep(1)}
-                        className="w-fit bg-purple-500 hover:bg-transparent hover:text-purple-500 border-2 border-transparent hover:border-purple-500 text-white px-6 py-1 rounded capitalize"
+                        className="w-fit bg-blue-600 hover:bg-white border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200 hover:bg-transparent hover:text-blue-600 my-transition font-medium rounded-md text-white px-6 py-1 rounded capitalize"
                     >
                         Edit
                     </button>
@@ -73,7 +73,7 @@ export default function Summary({ data, goToStep, resetFormData }) {
                     </div>
                     <button
                         onClick={() => goToStep(2)}
-                        className="w-fit mt-2 bg-purple-500 hover:bg-transparent hover:text-purple-500 border-2 border-transparent hover:border-purple-500 text-white px-6 py-1 rounded capitalize"
+                        className="w-fit bg-blue-600 hover:bg-white border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200 hover:bg-transparent hover:text-blue-600 my-transition font-medium rounded-md text-white px-6 py-1 rounded capitalize"
                     >
                         Edit
                     </button>
@@ -88,9 +88,10 @@ export default function Summary({ data, goToStep, resetFormData }) {
                     </div>
                     <button
                         onClick={() => goToStep(3)}
-                        className="w-fit mt-2 bg-purple-500 hover:bg-transparent hover:text-purple-500 border-2 border-transparent hover:border-purple-500 text-white px-6 py-1 rounded capitalize"
+                        className="w-fit bg-blue-600 hover:bg-white border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200 hover:bg-transparent hover:text-blue-600 my-transition font-medium rounded-md text-white px-6 py-1 rounded capitalize"
+
                     >
-                        Edit
+                      Edit
                     </button>
                 </div>
 
