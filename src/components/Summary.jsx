@@ -97,7 +97,7 @@ export default function Summary({ data, goToStep, resetFormData }) {
 
                 {/* Submit or Clear Button */}
                 <button
-                    className={`w-fit my-transition  px-8 py-2 text-black rounded-lg font-bold capitalize  ${state.isSubmitted ? 'bg-red-500 text-white dark:hover:bg-red-200 dark:hover:text-red-500 hover:bg-red-600' : 'bg-blue-700 text-white hover:bg-white hover:text-blue-700 border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200 mx-auto'}`}
+                    className={`w-fit my-transition  px-8 py-2 text-black rounded-lg font-bold capitalize  ${state.isSubmitted ? 'bg-red-500 text-white dark:hover:bg-red-200 dark:hover:text-red-500 hover:bg-red-600' : 'bg-blue-700 text-white hover:bg-white hover:text-blue-700 border hover:border-blue-600 dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200 ms-auto'} `}
                     onClick={state.isSubmitted ? clearData : handleSubmit}
                 >
                     {state.isSubmitted ? "Clear Data" : "Submit Data"}

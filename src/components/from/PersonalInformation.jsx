@@ -37,7 +37,7 @@ export default function PersonalInformation({ onNext, defaultValues }) {
         <MainLayout title={"Personal Information"}>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <InputCom label="Full Name" name="fullName" register={register} error={errors.fullName}/>
-                <InputCom label="Email" name="email" register={register} error={errors.email} type={"email"}/>
+                <InputCom label="Email" name="email" register={register} error={errors.email} />
                 <InputCom label="Phone Number" name="phone" register={register} error={errors.phone} type={"number"}/>
                 <button className="w-fit my-transition px-8 py-2 text-black rounded-lg font-bold capitalize  bg-black text-white hover:bg-white hover:text-blue-700 border hover:border-black  dark:text-black dark:hover:bg-black dark:hover:text-white dark:hover:border-gray-300 dark:bg-gray-200 mx-auto"
                     type="submit">Next</button>

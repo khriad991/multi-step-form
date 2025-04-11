@@ -67,8 +67,8 @@ export default function MultiStepForm() {
     };
 
     return (
-        <div className="form-container">
+        <>
             {renderStep()}
-        </div>
+        </>
     );
 }
